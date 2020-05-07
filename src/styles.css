@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.special_modal .modal-content {
+  background-color: #1b262c;
+  color: #fff;
+}
