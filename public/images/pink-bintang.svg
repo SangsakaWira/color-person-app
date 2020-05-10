@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="339.395" height="328.634" viewBox="0 0 339.395 328.634">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fc63b6;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #2a2c23;
+        font-size: 37px;
+        font-family: LucidaConsole, Lucida Console;
+        letter-spacing: 0.03em;
+      }
+
+      .cls-3 {
+        filter: url(#Path_10);
+      }
+    </style>
+    <filter id="Path_10" x="0" y="0" width="339.395" height="328.634" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.439"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pink-bintang" transform="translate(-48.906 -456.826)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 48.91, 456.83)">
+      <path id="Path_10-2" data-name="Path 10" class="cls-1" d="M12.657,7.743l51-72.149L-10.376-52.347l1.742-82.411L-57.1-92.228l-42.069-58.106-17.381,61.785-100.631-38.077,46.242,74.8-74.8,17.694,55.8,36.35-50.5,66.673,73.419-6.548,3.433,85.538,43.357-45.751L-71.851,160.3l11.079-61.729,85.606,35.737L-6.453,61.749l82.111-26.18Z" transform="translate(250.74 156.33)"/>
+    </g>
+    <text id="Merah_" data-name="Merah " class="cls-2" transform="translate(229.209 701.977) rotate(-16.989)"><tspan x="0" y="0">Merah </tspan></text>
+    <text id="Muda" class="cls-2" transform="translate(286.821 718.565) rotate(-16.989)"><tspan x="0" y="0">Muda</tspan></text>
+  </g>
+</svg>

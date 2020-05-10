@@ -74,7 +74,7 @@ const App = props => {
       {
         color: "#FB341D",
         kepribadian: "Merah",
-        colorIcon:"./images/merah-bulat.png",
+        colorIcon:"./images/merah-bulat.svg",
         image:
           "./images/merah.png",
         pesan: "Kamu sangat percaya diri dan berani. Senang mencari tantangan di lingkungan lama ataupun baru. Kamu mudah bergaul dengan siapa saja oleh sebab itu, Kamu memiliki bnyak teman."
@@ -82,7 +82,7 @@ const App = props => {
       {
         color: "#FFEA36",
         kepribadian: "Kuning",
-        colorIcon:"./images/kuning-bintang.png",
+        colorIcon:"./images/kuning-bintang.svg",
         image:
           "./images/kuning.png",
         pesan: "Bersemangat tinggi atau idealis. Dapat dengan mudah menemukan kebahagiaan secara keseluruhan. Kamu membawakan energi kebahagiaan kepada orang lain. Berbagi senyum,tawa, dan kegembiraan."
@@ -90,7 +90,7 @@ const App = props => {
       {
         color: "#00946C",
         kepribadian: "Hijau",
-        colorIcon:"./images/ijo-segitiga.png",
+        colorIcon:"./images/ijo-segitiga.svg",
         image:
           "./images/ijo.png",
         pesan: "Suka membantu org lain adalah prioritasmu! Kamu mudah memahami perasaan orang lain. Kamu dapat membuat langkah besar sebagai orang yang sukses, dan juga memiliki jiwa sosial yang tinggi."
@@ -98,7 +98,7 @@ const App = props => {
       {
         color: "#FC63B6",
         kepribadian: "Pink",
-        colorIcon:"./images/pink-bintang.png",
+        colorIcon:"./images/pink-bintang.svg",
         image:
           "./images/pink.png",
         pesan: "Memiliki hati yang sangat baik dan penuh kasih sayang pada orang lain. Ketulusan dan kelembutanmu membuat siapa saja yang berada disampingmu merasa nyaman dan hangat."
