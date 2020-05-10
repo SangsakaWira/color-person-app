@@ -53,8 +53,8 @@ function MyVerticallyCenteredModal(props) {
               melalui rekening:</p>
           </Col>
           <Col>
-            <h4>BCA -  6155175935</h4>
-            <p>a.n Brenda Caesar Herdayu</p>
+            <h4 style={{color:"#000"}}>BCA -  6155175935</h4>
+            <p style={{color:"#000"}}>a.n Brenda Caesar Herdayu</p>
           </Col>
         </Row>
       </Modal.Footer>
