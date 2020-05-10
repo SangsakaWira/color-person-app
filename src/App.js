@@ -74,6 +74,7 @@ const App = props => {
       {
         color: "#FB341D",
         kepribadian: "Merah",
+        colorIcon:"./images/merah-bulat.png",
         image:
           "./images/merah.png",
         pesan: "Kamu sangat percaya diri dan berani. Senang mencari tantangan di lingkungan lama ataupun baru. Kamu mudah bergaul dengan siapa saja oleh sebab itu, Kamu memiliki bnyak teman."
@@ -81,6 +82,7 @@ const App = props => {
       {
         color: "#FFEA36",
         kepribadian: "Kuning",
+        colorIcon:"./images/kuning-bintang.png",
         image:
           "./images/kuning.png",
         pesan: "Bersemangat tinggi atau idealis. Dapat dengan mudah menemukan kebahagiaan secara keseluruhan. Kamu membawakan energi kebahagiaan kepada orang lain. Berbagi senyum,tawa, dan kegembiraan."
@@ -88,6 +90,7 @@ const App = props => {
       {
         color: "#00946C",
         kepribadian: "Hijau",
+        colorIcon:"./images/ijo-segitiga.png",
         image:
           "./images/ijo.png",
         pesan: "Suka membantu org lain adalah prioritasmu! Kamu mudah memahami perasaan orang lain. Kamu dapat membuat langkah besar sebagai orang yang sukses, dan juga memiliki jiwa sosial yang tinggi."
@@ -95,6 +98,7 @@ const App = props => {
       {
         color: "#FC63B6",
         kepribadian: "Pink",
+        colorIcon:"./images/pink-bintang.png",
         image:
           "./images/pink.png",
         pesan: "Memiliki hati yang sangat baik dan penuh kasih sayang pada orang lain. Ketulusan dan kelembutanmu membuat siapa saja yang berada disampingmu merasa nyaman dan hangat."
@@ -107,7 +111,7 @@ const App = props => {
       <div style={{ width: "100%", background: "#F1B7F8" }}>
         <Row style={{ background: "#F1B7F8", padding: "5%" }}>
           <Col>
-            <h1 style={{ color: "#000000" }}>Halo Semua</h1>
+            <h1 style={{ color: "#000000" }}><b>Hai Semua</b></h1>
             <p style={{ color: "#000000" }}>
               Jadi disini kami ada permainan buat kalian nih yang ingin
               mengetahui kepribadian berdasarkan warna favorit kalian. Kalian
@@ -140,15 +144,15 @@ const App = props => {
       }}>
         {state.colors.map((data, key) => {
           return (
-            <Col sm={6} key={key}>
-              <Card
+            <Col sm={6} key={key} style={{textAlign:"center"}}>
+              <Image
+                src={data.colorIcon}
                 style={{
                   padding: "1%",
-                  width: "100%",
-                  height: "18rem",
+                  width: "75%",
+                  height: "75%",
                   marginTop: "2%",
-                  textAlign: "center",
-                  backgroundColor: data.color
+                  textAlign: "center"
                 }}
                 onClick={() => {
                   setModalShow(true);
