@@ -117,12 +117,11 @@ const App = props => {
           </Col>
           <Col style={{ padding: "10px", textAlign: "center" }}>
             <Image
-              src="https://image.freepik.com/free-vector/people-helping-each-other-wiht-flat-design_23-2147675292.jpg"
+              src="./images/Icon.png"
               style={{ height: "120px" }}
               className="center"
-              roundedCircle
             />
-            <h3 style={{ color: "#000000" }}>#bagikebaikan</h3>
+            <h4 style={{ color: "#000000" }}><b>#bagikebaikan</b></h4>
           </Col>
         </Row>
       </div>
