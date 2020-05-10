@@ -19,28 +19,44 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{ backgroundColor: "202040" }}>
-        <Modal.Title id="contained-modal-title-vcenter">
-          {props.kepribadian}
+      <Modal.Header closeButton style={{ backgroundColor: props.color }}>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ color: "#000" }}>
+          {/* <h4>Your Hex Color: {props.color}</h4> */}
+          <div style={{ textAlign: "center" }}>
+            <Image
+              style={{ width: "40%", height: "50%", padding: "5%" }}
+              src={props.image}
+              rounded
+              fluid
+              centered
+            />
+          </div>
+          <p style={{ color: "#FFF", textAlign: "center" }}>
+            {props.pesan}
+          </p>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Your Hex Color: {props.color}</h4>
-        <div style={{ textAlign: "center" }}>
-          <Image
-            style={{ width: "40%", height: "50%", padding: "5%" }}
-            src={props.image}
-            rounded
-            fluid
-            centered
-          />
-        </div>
-        <p>
-          {props.pesan}
+        <p style={{color:"#000",textAlign:"center"}}>
+          Hai,
+          Terimakasih sudah berbagi kebaikan bersama, karya permainan ini dipersembahakan untuk kamu.
+          Jazakallah semuanya, jangan lelah untuk beribadah, semoga apa yang kita lakukan ini dapat
+          meringankan beban saudara-saudara kita yang membutuhkan.
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Read More</Button>
+        {/* <Button onClick={props.onHide}>Read More</Button> */}
+        <Row>
+          <Col>
+            <p style={{color:"#000"}}>Yuk, Sebarkan kebaikan dengan orang-orang terdekatmu. 
+               Semoga mendapatkan keberkahan :D Donasi dpt disalurakan 
+              melalui rekening:</p>
+          </Col>
+          <Col>
+            <h4>BCA -  6155175935</h4>
+            <p>a.n Brenda Caesar Herdayu</p>
+          </Col>
+        </Row>
       </Modal.Footer>
     </Modal>
   );
@@ -125,7 +141,7 @@ const App = props => {
       }}>
         {state.colors.map((data, key) => {
           return (
-            <Col sm={4} key={key}>
+            <Col sm={6} key={key}>
               <Card
                 style={{
                   padding: "1%",
