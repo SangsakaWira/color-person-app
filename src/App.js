@@ -14,12 +14,12 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      className="special_modal"
+      className="special_modal-1"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter" style={{ color: "#000",textAlign: "center" }}>
+      <Modal.Header>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ textAlign: "center", margin:"0px" }}>
           <div style={{ textAlign: "center" }}>
             <Image
               style={{ width: "100%", height: "100%", textAlign: "center" }}
