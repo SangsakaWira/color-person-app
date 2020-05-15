@@ -28,7 +28,7 @@ function MyVerticallyCenteredModal(props) {
               style={{ width: "10%" }}
               className="center"
             />
-             <h4 style={{ color: "#000000" }}><b>#bagikebaikan</b></h4>
+            <h4 style={{ color: "#000000" }}><b>#bagikebaikan</b></h4>
             <Image
               style={{ width: "100%", height: "75%", padding: "5%" }}
               src={props.image}
@@ -38,9 +38,9 @@ function MyVerticallyCenteredModal(props) {
             />
           </div>
           <div>
-          <p style={{ color: "#FFF", textAlign: "center" }}>
-            {props.pesan}
-          </p>
+            <p style={{ color: "#FFF", textAlign: "center" }}>
+              {props.pesan}
+            </p>
           </div>
         </Modal.Title>
       </Modal.Header>
@@ -173,6 +173,20 @@ const App = props => {
             </Col>
           )
         })}
+      </Row>
+      <Row style={{ background: "#FB341D" }}>
+        <Col>
+          <p style={{ color: "#FFF", textAlign: "center", padding: "5%" }}>Yuk, Sebarkan kebaikan dengan orang-orang terdekatmu.
+          Semoga mendapatkan keberkahan :D Donasi dpt disalurakan
+              melalui rekening:</p>
+        </Col>
+        <Col>
+          <div style={{ color: "#FFF", textAlign: "center", padding: "5%" }}>
+            <h4 style={{ color: "#FFF", textAlign: "center" }}>BCA -  6155175935</h4>
+            <p style={{ color: "#FFF", textAlign: "center" }}>a.n Brenda Caesar Herdayu</p>
+          </div>
+
+        </Col>
       </Row>
       <MyVerticallyCenteredModal
         show={modalShow}
