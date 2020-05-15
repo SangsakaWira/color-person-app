@@ -15,57 +15,24 @@ function MyVerticallyCenteredModal(props) {
     <Modal
       {...props}
       className="special_modal"
-      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton style={{ backgroundColor: props.color }}>
-        <Modal.Title id="contained-modal-title-vcenter" style={{ color: "#000" }}>
-          {/* <h4>Your Hex Color: {props.color}</h4> */}
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter" style={{ color: "#000",textAlign: "center" }}>
           <div style={{ textAlign: "center" }}>
             <Image
-              src="./images/Icon.png"
-              style={{ width: "10%" }}
-              className="center"
-            />
-            <h4 style={{ color: "#000000" }}><b>#bagikebaikan</b></h4>
-            <Image
-              style={{ width: "100%", height: "75%", padding: "5%" }}
+              style={{ width: "100%", height: "100%", textAlign: "center" }}
               src={props.image}
               rounded
-              fluid
               centered
             />
-          </div>
-          <div>
-            <p style={{ color: "#FFF", textAlign: "center" }}>
+            <p>
               {props.pesan}
             </p>
           </div>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <p style={{ color: "#000", textAlign: "center" }}>
-          Hai,
-          Terimakasih sudah berbagi kebaikan bersama, karya permainan ini dipersembahakan untuk kamu.
-          Jazakallah semuanya, jangan lelah untuk beribadah, semoga apa yang kita lakukan ini dapat
-          meringankan beban saudara-saudara kita yang membutuhkan.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        {/* <Button onClick={props.onHide}>Read More</Button> */}
-        <Row>
-          <Col>
-            <p style={{ color: "#000" }}>Yuk, Sebarkan kebaikan dengan orang-orang terdekatmu.
-            Semoga mendapatkan keberkahan :D Donasi dpt disalurakan
-              melalui rekening:</p>
-          </Col>
-          <Col>
-            <h4 style={{ color: "#000" }}>BCA -  6155175935</h4>
-            <p style={{ color: "#000" }}>a.n Brenda Caesar Herdayu</p>
-          </Col>
-        </Row>
-      </Modal.Footer>
     </Modal>
   );
 }
@@ -84,7 +51,7 @@ const App = props => {
         kepribadian: "Merah",
         colorIcon: "./images/merah-bulat.svg",
         image:
-          "./images/merah.png",
+          "./images/MERAH.svg",
         pesan: "Kamu sangat percaya diri dan berani. Senang mencari tantangan di lingkungan lama ataupun baru. Kamu mudah bergaul dengan siapa saja oleh sebab itu, Kamu memiliki bnyak teman."
       },
       {
@@ -92,7 +59,7 @@ const App = props => {
         kepribadian: "Kuning",
         colorIcon: "./images/kuning-bintang.svg",
         image:
-          "./images/kuning.png",
+          "./images/KUNING.svg",
         pesan: "Bersemangat tinggi atau idealis. Dapat dengan mudah menemukan kebahagiaan secara keseluruhan. Kamu membawakan energi kebahagiaan kepada orang lain. Berbagi senyum,tawa, dan kegembiraan."
       },
       {
@@ -100,7 +67,7 @@ const App = props => {
         kepribadian: "Hijau",
         colorIcon: "./images/ijo-segitiga.svg",
         image:
-          "./images/ijo.png",
+          "./images/IJO.svg",
         pesan: "Suka membantu org lain adalah prioritasmu! Kamu mudah memahami perasaan orang lain. Kamu dapat membuat langkah besar sebagai orang yang sukses, dan juga memiliki jiwa sosial yang tinggi."
       },
       {
@@ -108,7 +75,7 @@ const App = props => {
         kepribadian: "Pink",
         colorIcon: "./images/pink-bintang.svg",
         image:
-          "./images/pink.png",
+          "./images/PINK.svg",
         pesan: "Memiliki hati yang sangat baik dan penuh kasih sayang pada orang lain. Ketulusan dan kelembutanmu membuat siapa saja yang berada disampingmu merasa nyaman dan hangat."
       }
     ]
