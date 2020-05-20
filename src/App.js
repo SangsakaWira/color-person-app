@@ -85,26 +85,27 @@ const App = props => {
     <Container fluid>
       <div style={{ width: "100%", background: "#F1B7F8" }}>
         <Row style={{ background: "#F1B7F8", padding: "5%" }}>
-          <Col>
-            <h1 style={{ color: "#000000" }}><b>Hai Semua</b></h1>
+          <Col style={{fontFamily:"Lucida Console"}}>
+            <h1 style={{ color: "#000000",fontSize:"400%"}}><b>Hai</b></h1>
             <p style={{ color: "#000000" }}>
-              Jadi disini kami ada permainan buat kalian nih yang ingin
-              mengetahui kepribadian berdasarkan warna favorit kalian. Kalian
-              bisa pilih warna kesukaan kalian dan kalian akan melihat
-              penjelasan tentang pilihan kalian.
+              Kita punya sesuatu buat kamu,
             </p>
+            <p style={{ color: "#000000",marginTop:"-15px" }}>
+              Kira - kira,
+            </p>
+            <p style={{ color: "#000000",fontSize:"17px"}}><b>Kamu suka warna apa ya?</b></p>
           </Col>
           <Col style={{ padding: "10px", textAlign: "center" }}>
             <Image
-              src="./images/Icon.png"
-              style={{ height: "120px" }}
+              src="./images/right-icon.svg"
+              style={{ height: "80px" }}
               className="center"
             />
             <h4 style={{ color: "#000000" }}><b>#bagikebaikan</b></h4>
           </Col>
         </Row>
       </div>
-      <div style={{ width: "100%", background: "#F1B7F8", textAlign: "center" }}>
+      {/* <div style={{ width: "100%", background: "#F1B7F8", textAlign: "center" }}>
         <Row style={{ background: "#F1B7F8", textAlign: "center" }}>
           <Col>
             <h1 style={{ textAlign: "center", color: "#00000", paddingBottom: "2%" }}>
@@ -112,7 +113,7 @@ const App = props => {
             </h1>
           </Col>
         </Row>
-      </div>
+      </div> */}
       <Row style={{
         paddingTop: "2%",
         marginBottom: "10px"
